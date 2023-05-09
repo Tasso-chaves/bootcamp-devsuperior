@@ -8,4 +8,5 @@ import com.dev.democatalog.entities.User;
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {
     
+    User findByEmail(String email);
 }
